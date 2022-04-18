@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>피자주문하기</h2><hr>
+    <form action="/login.php"method="get">
+    고객 명 : <input type="text"placeholder="홍길동"name="이름"><br>
+    전화번호 : <input type="text"placeholder="010-0000-0000"name="전화번호"><br>
+    E-mail : <input type="email"placeholder="www.acw.com"name="이메일"><br>
+    <fieldset style="width: 250px;">
+    <legend>피자 사이즈</legend>
+    smail<input type="radio"name="size"value="smail"><br>
+    midum<input type="radio"name="size"value="midum"><br>
+    lauge <input type="radio"name="size"value="lauge"><br>
+</fieldset>
+<fieldset style="width: 250px;">
+    <legend>토핑 선택</legend>
+    베이컨<input type="checkbox"name="베이컨"><br>
+    치즈<input type="checkbox"name="치즈"><br>
+    양파<input type="checkbox"name="양파"><br>
+    버섯<input type="checkbox"name="버섯"><br>
+</fieldset>
+희망배송시간 <input type="time"value=""><br>
+배송시 요청사항 : <textarea cols="20" rows="2"  ></textarea><br>
+<input type="submit" value="주문하기"   /> <input type="reset"value="다시 선택하기">
+</form>
+</body>
+</html>
