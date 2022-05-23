@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 꾸미기</title>
+    <style>
+        input[type=text],input[type=email]{
+            color: red;            /* border-radius: 10px; 끝에 둥글기*/
+        }
+
+        input:hover, textarea:hover{
+        background-color: aliceblue;
+        }
+        input[type=text]:focus , input[type=email]:focus{
+            font-size: 120%;
+        }
+        @keyframes tcolor{
+            0%{color: red;}
+            50%{color: green;}
+            100%{color: blue;}
+        }
+        h3>span{
+            animation-name:tcolor;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bomb{
+            0%{font-size: 500%;}
+            100%{font-size: 100%;}
+        }
+        #tgumin{
+            animation-name: bomb;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        textarea:focus{
+            font-size: 120%;
+        }
+        textarea{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3><span>폼</span> <span id="tgumin">꾸미기</span></h3>
+    <hr>
+    <form action="">
+        <label for="">
+            NAME <input type="text"><br>
+            E-mail <input type="email"placeholder="asd@naver.com"><br>
+            Comment<textarea placeholder="메시지를 남겨주세요"></textarea><br>
+            <span></span><input type="submit" value="submit">
+
+        </label>
+    </form>
+</body>
+</html>

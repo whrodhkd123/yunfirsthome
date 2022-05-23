@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css테이블꾸미기</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border-bottom: 1px gray solid;
+            height: 20px;
+            width: 100px;
+            padding: 10px;
+            text-align: left;          /*글자 위치 */
+        }
+        th,tfoot{
+            background-color: darkgray;
+            color: yellow;
+        }
+        tbody tr:nth-child(even){
+            background-color: aqua;     /*:nth-child (odd) (even) 짝수 홀수에 맞춰서 넣을수 있음*/
+        }
+        tbody tr:hover{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>1학기성적</h3>
+    <hr>
+    <table>
+        <thead>
+            <tr><th>이름</th>  <th>HTML</th>  <th>CSS</th> </tr>
+            <tbody>
+            <tr><td>황기태</td> <td>80</td> <td>70</td></tr>
+            <tr><td>이재은</td> <td>95</td> <td>99</td></tr>
+            <tr><td>이병은</td> <td>85</td> <td>90</td></tr>
+            <tr><td>김남운</td> <td>50</td> <td>40</td></tr>
+        </tbody>
+            <tfoot>
+            <tr><td>합</td> <td>310</td> <td>249</td></tr>
+            </tfoot>
+        </thead>
+    </table>
+</body>
+</html>
